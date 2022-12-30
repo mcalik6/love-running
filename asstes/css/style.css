@@ -216,7 +216,11 @@ footer {
     clear: both;
     line-height: 0;
     column-count: 4;
-    column-gap: 0;
+    column-gap: 2px;
+    
+}
+.firstphoto {
+    padding-bottom: 2px;
 }
 
 #photos > img {
@@ -284,5 +288,13 @@ footer {
     .left-about-heading p, .right-about-heading p {
         text-align: center;
         padding: 0 20px;
+    }
+    #photos {
+        column-count: 3;
+    }
+}
+@media screen and (max-width: 700px){
+    #photos {
+        column-count: 2;
     }
 }
